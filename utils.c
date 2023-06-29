@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_printable - Evaluates if a char is printable
+ * is_printable - function to evaluate if a char is printable
  * @c: Char to be evaluated.
  *
  * Return: 1 if c is printable, 0 otherwise
@@ -15,7 +15,7 @@ int is_printable(char c)
 }
 
 /**
- * append_hexa_code - Append ascci in hexadecimal code to buffer
+ * append_hexa_code - function to append ascci in hexadecimal code to buffer
  * @buffer: Array of chars.
  * @i: Index at which to start appending.
  * @ascii_code: ASSCI CODE.
@@ -24,7 +24,6 @@ int is_printable(char c)
 int append_hexa_code(char ascii_code, char buffer[], int i)
 {
 	char map_to[] = "0123456789ABCDEF";
-	/* The hexa format code is always 2 digits long */
 	if (ascii_code < 0)
 		ascii_code *= -1;
 
@@ -38,7 +37,7 @@ int append_hexa_code(char ascii_code, char buffer[], int i)
 }
 
 /**
- * is_digit - Verifies if a char is a digit
+ * is_digit - function to verify if a char is a digit
  * @c: Char to be evaluated
  *
  * Return: 1 if c is a digit, 0 otherwise
@@ -52,7 +51,7 @@ int is_digit(char c)
 }
 
 /**
- * convert_size_number - prints a number to the specified size
+ * convert_size_number - function to print number to the specified size
  * @num: Number to be casted.
  * @size: Number indicating the type to be casted.
  *
@@ -69,7 +68,7 @@ long int convert_size_number(long int num, int size)
 }
 
 /**
- * convert_size_unsgnd - prints a number to the specified size
+ * convert_size_unsgnd - function to print number to the specified size
  * @num: Number to be casted
  * @size: Number indicating the type to be casted
  *
